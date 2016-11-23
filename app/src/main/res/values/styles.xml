@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="DWTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:colorAccent">@color/primaryAccent</item>
+    </style>
+
+</resources>

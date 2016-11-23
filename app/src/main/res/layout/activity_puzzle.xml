@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_puzzle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dam.android.dipuzzle.PuzzleActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:id="@+id/U_L"
+        app:layout_constraintRight_toLeftOf="@+id/U_C"
+        app:layout_constraintBottom_toTopOf="@+id/C_L"
+        android:tag="0-0" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/U_C"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/C_C"
+        android:tag="1-0">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:id="@+id/U_R"
+        app:layout_constraintLeft_toRightOf="@+id/U_C"
+        app:layout_constraintBottom_toTopOf="@+id/C_R"
+        android:tag="2-0" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:id="@+id/C_L"
+        app:layout_constraintRight_toLeftOf="@+id/C_C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="0-1" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/C_C"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:tag="1-1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:id="@+id/C_R"
+        app:layout_constraintLeft_toRightOf="@+id/C_C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="2-1" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:id="@+id/D_L"
+        app:layout_constraintTop_toBottomOf="@+id/C_L"
+        app:layout_constraintRight_toLeftOf="@+id/D_C"
+        android:tag="0-2" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/D_C"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        app:layout_constraintTop_toBottomOf="@+id/C_C"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:tag="1-2" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:id="@+id/D_R"
+        app:layout_constraintTop_toBottomOf="@+id/C_R"
+        app:layout_constraintLeft_toRightOf="@+id/D_C"
+        android:tag="2-2" />
+
+</android.support.constraint.ConstraintLayout>
